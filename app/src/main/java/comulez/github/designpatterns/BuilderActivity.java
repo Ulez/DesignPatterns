@@ -4,9 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
-import comulez.github.designpatterns.R;
 import comulez.github.designpatterns.builder.Hero;
-import comulez.github.designpatterns.builder.HeroBuilder;
 
 public class BuilderActivity extends AppCompatActivity {
 
@@ -19,7 +17,7 @@ public class BuilderActivity extends AppCompatActivity {
         setContentView(R.layout.activity_builder);
         tvDota = (TextView) findViewById(R.id.tv_dota);
         tvLol = (TextView) findViewById(R.id.tv_lol);
-        Hero heroDota = new HeroBuilder()
+        Hero heroDota = new Hero.HeroBuilder()
                 .setHeroName("灰烬之灵")
                 .setEquipment1("代达罗斯之殇")
                 .setEquipment2("林肯法球")
@@ -29,7 +27,7 @@ public class BuilderActivity extends AppCompatActivity {
                 .setEquipment6("圣剑")
                 .create();
 
-        Hero heroLOL = new HeroBuilder()
+        Hero heroLOL = new Hero.HeroBuilder()
                 .setHeroName("疾风剑豪")
                 .setEquipment1("无尽之刃")
                 .setEquipment2("三相之力")

@@ -6,7 +6,7 @@ package comulez.github.designpatterns.builder;
  * Email：lcy1532110757@gmail.com
  */
 
-public  class Hero {
+public class Hero {
     protected String heroName;
     protected String equipment1;
     protected String equipment2;
@@ -14,9 +14,6 @@ public  class Hero {
     protected String equipment4;
     protected String equipment5;
     protected String equipment6;
-
-
-
 
     public void setHeroName(String heroName) {
         this.heroName = heroName;
@@ -57,5 +54,48 @@ public  class Hero {
                 ", equipment5='" + equipment5 + '\'' +
                 ", equipment6='" + equipment6 + '\'' +
                 '}';
+    }
+
+    public static class HeroBuilder {
+        private Hero hero = new Hero();
+
+        public HeroBuilder setHeroName(String heroName) {
+            hero.setHeroName(heroName);
+            return this;
+        }
+
+        public HeroBuilder setEquipment1(String equipment1) {
+            hero.setEquipment1(equipment1);
+            return this;
+        }
+
+        public HeroBuilder setEquipment2(String equipment2) {
+            hero.setEquipment2(equipment2);
+            return this;
+        }
+
+        public HeroBuilder setEquipment3(String equipment3) {
+            hero.setEquipment3(equipment3);
+            return this;
+        }
+
+        public HeroBuilder setEquipment4(String equipment4) {
+            hero.setEquipment4(equipment4);
+            return this;
+        }
+
+        public HeroBuilder setEquipment5(String equipment5) {
+            hero.setEquipment5(equipment5);
+            return this;
+        }
+
+        public HeroBuilder setEquipment6(String equipment6) {
+            hero.setEquipment6(equipment6);
+            return this;
+        }
+
+        public Hero create() {
+            return hero;
+        }
     }
 }
