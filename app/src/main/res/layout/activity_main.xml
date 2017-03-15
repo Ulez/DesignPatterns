@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="comulez.github.designpatterns.MainActivity">
+
+    <Button
+        android:id="@+id/tv_single"
+        style="@style/btMain"
+        android:text="单例模式" />
+
+    <Button
+        android:id="@+id/tv_builder"
+        style="@style/btMain"
+        android:text="Builder模式" />
+</LinearLayout>
