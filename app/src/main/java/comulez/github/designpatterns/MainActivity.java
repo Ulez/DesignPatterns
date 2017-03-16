@@ -10,6 +10,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     Button btSingle;
     Button btBuilder;
+    private Button btFactory;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,8 +18,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         btSingle = (Button) findViewById(R.id.tv_single);
         btBuilder = (Button) findViewById(R.id.tv_builder);
+        btFactory = (Button) findViewById(R.id.tv_factory);
+
         btSingle.setOnClickListener(this);
         btBuilder.setOnClickListener(this);
+        btFactory.setOnClickListener(this);
     }
 
     @Override
@@ -29,6 +33,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.tv_builder:
                 startActivity(new Intent(this, BuilderActivity.class));
+                break;
+            case R.id.tv_factory:
+                startActivity(new Intent(this, FactoryActivity.class));
                 break;
         }
     }

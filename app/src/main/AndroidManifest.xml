@@ -16,7 +16,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".SingleActivity" />
-        <activity android:name=".BuilderActivity"></activity>
+        <activity android:name=".BuilderActivity" />
+        <activity android:name=".FactoryActivity"></activity>
     </application>
 
 </manifest>

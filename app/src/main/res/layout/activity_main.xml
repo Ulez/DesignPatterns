@@ -16,4 +16,8 @@
         android:id="@+id/tv_builder"
         style="@style/btMain"
         android:text="Builder模式" />
+    <Button
+        android:id="@+id/tv_factory"
+        style="@style/btMain"
+        android:text="工厂模式" />
 </LinearLayout>
