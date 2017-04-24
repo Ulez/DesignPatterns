@@ -24,4 +24,8 @@
         android:id="@+id/tv_facade"
         style="@style/btMain"
         android:text="外观模式" />
+    <Button
+        android:id="@+id/tv_stragety"
+        style="@style/btMain"
+        android:text="策略模式" />
 </LinearLayout>

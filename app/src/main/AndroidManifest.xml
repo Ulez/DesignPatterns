@@ -18,7 +18,8 @@
         <activity android:name=".SingleActivity" />
         <activity android:name=".BuilderActivity" />
         <activity android:name=".FactoryActivity" />
-        <activity android:name=".FacadeActivity"></activity>
+        <activity android:name=".FacadeActivity" />
+        <activity android:name=".StragetyActivity"></activity>
     </application>
 
 </manifest>

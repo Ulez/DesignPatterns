@@ -12,6 +12,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Button btBuilder;
     Button btFactory;
     Button btFacade;
+    Button btStragety;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,11 +22,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btBuilder = (Button) findViewById(R.id.tv_builder);
         btFactory = (Button) findViewById(R.id.tv_factory);
         btFacade = (Button) findViewById(R.id.tv_facade);
+        btStragety = (Button) findViewById(R.id.tv_stragety);
 
         btSingle.setOnClickListener(this);
         btBuilder.setOnClickListener(this);
         btFactory.setOnClickListener(this);
         btFacade.setOnClickListener(this);
+        btStragety.setOnClickListener(this);
     }
 
     @Override
@@ -42,6 +45,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.tv_facade:
                 startActivity(new Intent(this, FacadeActivity.class));
+                break;
+            case R.id.tv_stragety:
+                startActivity(new Intent(this, StragetyActivity.class));
                 break;
         }
     }
