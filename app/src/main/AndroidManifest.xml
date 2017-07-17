@@ -19,7 +19,8 @@
         <activity android:name=".BuilderActivity" />
         <activity android:name=".FactoryActivity" />
         <activity android:name=".FacadeActivity" />
-        <activity android:name=".StragetyActivity"></activity>
+        <activity android:name=".StragetyActivity" />
+        <activity android:name=".IteraterActivity"></activity>
     </application>
 
 </manifest>

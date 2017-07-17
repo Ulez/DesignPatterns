@@ -5,35 +5,41 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+import butterknife.Bind;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
 
-    Button btSingle;
-    Button btBuilder;
-    Button btFactory;
-    Button btFacade;
-    Button btStragety;
+public class MainActivity extends AppCompatActivity {
+
+
+    @Bind(R.id.tv_single)
+    Button tvSingle;
+    @Bind(R.id.tv_builder)
+    Button tvBuilder;
+    @Bind(R.id.tv_factory)
+    Button tvFactory;
+    @Bind(R.id.tv_facade)
+    Button tvFacade;
+    @Bind(R.id.tv_stragety)
+    Button tvStragety;
+    @Bind(R.id.tv_iterater)
+    Button tvIterater;
+    @Bind(R.id.activity_main)
+    LinearLayout activityMain;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        btSingle = (Button) findViewById(R.id.tv_single);
-        btBuilder = (Button) findViewById(R.id.tv_builder);
-        btFactory = (Button) findViewById(R.id.tv_factory);
-        btFacade = (Button) findViewById(R.id.tv_facade);
-        btStragety = (Button) findViewById(R.id.tv_stragety);
-
-        btSingle.setOnClickListener(this);
-        btBuilder.setOnClickListener(this);
-        btFactory.setOnClickListener(this);
-        btFacade.setOnClickListener(this);
-        btStragety.setOnClickListener(this);
+        ButterKnife.bind(this);
     }
 
-    @Override
-    public void onClick(View v) {
-        switch (v.getId()) {
+
+    @OnClick({R.id.tv_single, R.id.tv_builder, R.id.tv_factory, R.id.tv_facade, R.id.tv_stragety, R.id.tv_iterater})
+    public void onClick(View view) {
+        switch (view.getId()) {
             case R.id.tv_single:
                 startActivity(new Intent(this, SingleActivity.class));
                 break;
@@ -48,6 +54,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.tv_stragety:
                 startActivity(new Intent(this, StragetyActivity.class));
+                break;
+            case R.id.tv_iterater:
+                startActivity(new Intent(this, IteraterActivity.class));
                 break;
         }
     }
