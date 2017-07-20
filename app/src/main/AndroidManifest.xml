@@ -20,7 +20,8 @@
         <activity android:name=".FactoryActivity" />
         <activity android:name=".FacadeActivity" />
         <activity android:name=".StragetyActivity" />
-        <activity android:name=".IteraterActivity"></activity>
+        <activity android:name=".IteraterActivity" />
+        <activity android:name=".ProxyActivity"></activity>
     </application>
 
 </manifest>

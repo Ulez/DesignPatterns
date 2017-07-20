@@ -32,4 +32,9 @@
         android:id="@+id/tv_iterater"
         style="@style/btMain"
         android:text="责任链模式" />
+
+    <Button
+        android:id="@+id/tv_proxy"
+        style="@style/btMain"
+        android:text="代理模式" />
 </LinearLayout>
