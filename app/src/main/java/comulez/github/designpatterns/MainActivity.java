@@ -28,6 +28,8 @@ public class MainActivity extends AppCompatActivity {
     Button tvIterater;
     @Bind(R.id.tv_proxy)
     Button tvProxy;
+    @Bind(R.id.tv_observer)
+    Button tvObserver;
     @Bind(R.id.activity_main)
     LinearLayout activityMain;
 
@@ -39,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    @OnClick({R.id.tv_single, R.id.tv_builder, R.id.tv_factory, R.id.tv_facade, R.id.tv_stragety, R.id.tv_iterater, R.id.tv_proxy})
+    @OnClick({R.id.tv_single, R.id.tv_builder, R.id.tv_factory, R.id.tv_facade, R.id.tv_stragety, R.id.tv_iterater, R.id.tv_proxy, R.id.tv_observer})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.tv_single:
@@ -62,6 +64,9 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.tv_proxy:
                 startActivity(new Intent(this, ProxyActivity.class));
+                break;
+            case R.id.tv_observer:
+                startActivity(new Intent(this, ObserverActivity.class));
                 break;
         }
     }

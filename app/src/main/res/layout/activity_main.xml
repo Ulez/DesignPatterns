@@ -37,4 +37,9 @@
         android:id="@+id/tv_proxy"
         style="@style/btMain"
         android:text="代理模式" />
+
+    <Button
+        android:id="@+id/tv_observer"
+        style="@style/btMain"
+        android:text="观察者模式" />
 </LinearLayout>

@@ -21,7 +21,8 @@
         <activity android:name=".FacadeActivity" />
         <activity android:name=".StragetyActivity" />
         <activity android:name=".IteraterActivity" />
-        <activity android:name=".ProxyActivity"></activity>
+        <activity android:name=".ProxyActivity" />
+        <activity android:name=".ObserverActivity"></activity>
     </application>
 
 </manifest>
